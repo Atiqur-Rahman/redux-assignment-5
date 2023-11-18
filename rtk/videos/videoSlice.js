@@ -1,3 +1,5 @@
+const { createSlice } = require('@reduxjs/toolkit');
+
 // initial State
 const initialState = {
     loading: false,
@@ -5,3 +7,11 @@ const initialState = {
     error: '',
     objectLoaded: false,
 };
+
+const videoSlice = createSlice({
+    name: 'video',
+    initialState,
+    // extraReducers: (builder) => {
+    //     builder.addCase()
+    // }
+});
